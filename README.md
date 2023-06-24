@@ -11,7 +11,7 @@ To generate the plots, you will need to follow these steps:
 
 1. Clone the repository: Start by cloning the repository to your local machine using the following command:
 ```
-git clone https://github.com/your-username/wiki-page-views-analysis.git
+git clone https://github.com/jaisreet/wiki-page-views-analysis.git
 ```
 
 2. Navigate to the project directory: Move into the project directory using the command:
