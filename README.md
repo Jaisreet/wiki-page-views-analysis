@@ -1,38 +1,36 @@
 # Plotting Wikipedia Page Views
-Python project analyzing Wikipedia page views and generating insightful plots. Explore distribution of views and compare data sets with scatterplots. Gain valuable insights into page popularity and trends.
 
-GitHub Page: Plotting Wikipedia Page Views
+## Problem Statement
 
-**Introduction:**
-In this project, we will be creating two plots to analyze the number of times individual Wikipedia pages were viewed in two particular hours. We will use data extracted from Wikipedia's page view counts.
+The task is to create two plots based on the provided data of the number of times individual Wikipedia pages were viewed in two specific hours. The goal is to visualize the distribution of page views and examine the relationship between views from two different data files.
 
-**Instructions:**
-To generate the plots, you will need to follow these steps:
+## Approach and Methods
 
-1. Clone the repository: Start by cloning the repository to your local machine using the following command:
-```
-git clone https://github.com/jaisreet/wiki-page-views-analysis.git
-```
+1. **Plot 1: Distribution of Views**
 
-2. Navigate to the project directory: Move into the project directory using the command:
-```
-cd wiki-page-views-analysis
-```
+   - Sort the data from the first input file based on the number of views in descending order using the `sort_values` function.
+   - Create a plot using `plt.plot` with the sorted views data. Matplotlib will automatically generate the x-coordinates as a range from 0 to n-1.
+   - Use a Pareto distribution to model the distribution of page views based on statistical knowledge.
 
-3. Run the Python script: Execute the Python script `create_plots.py` and provide the filenames of the two data files as command-line arguments. The command should look like this:
+2. **Plot 2: Hourly Views**
+
+   - Read the two data files and extract the views data into separate Pandas Series objects.
+   - Create a DataFrame using the two Series, where the page names serve as the index.
+   - Plot a scatterplot using `plt.plot` with the views from the first data file as the x-coordinate and the corresponding views from the second data file as the y-coordinate.
+   - Adjust the axes to log scale using `plt.xscale` and `plt.yscale` for better visualization due to the distribution of values.
+
+3. **Final Output**
+
+   - Use `plt.savefig` to save the figure as a PNG file named "wikipedia.png".
+   - Add labels to the plots using `plt.title`, `plt.xlabel`, and `plt.ylabel` to provide useful information.
+   - To view the figure during testing, use `plt.show()`, but exclude it in the final version.
+
+A sample "wikipedia.png" file is included in the ZIP file for reference.
+
+To run the program, execute the following command in the command line:
+
 ```
 python3 create_plots.py pagecounts-20190509-120000.txt pagecounts-20190509-130000.txt
 ```
-Replace `pagecounts-20190509-120000.txt` and `pagecounts-20190509-130000.txt` with the actual filenames of your data files.
 
-**Note:** Make sure the data files are located in the same directory as the Python script.
-
-5. View the plots: The script will generate two plots and save them as `wikipedia.png` in the project directory. You can view the plots by opening the file or use any image viewer.
-
-**Additional Information:**
-- The first plot, "Plot 1: Distribution of Views," represents the distribution of page views from the first data set. It assumes a Pareto distribution.
-- The second plot, "Plot 2: Hourly Views," shows a scatterplot comparing the views from the first and second data files. The axes are displayed in a logarithmic scale.
-- The plots will have relevant labels for clarity.
-- You can customize the size of the plots by modifying the `plt.figure(figsize=(10, 5))` line in the script.
-
-For further details and code implementation, please refer to the [GitHub repository](https://github.com/jaisreet/wiki-page-views-analysis)
+Make sure to replace "pagecounts-20190509-120000.txt" and "pagecounts-20190509-130000.txt" with the actual filenames you want to process.
