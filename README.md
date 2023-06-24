@@ -16,7 +16,7 @@ git clone https://github.com/your-username/wiki-page-views-analysis.git
 
 2. Navigate to the project directory: Move into the project directory using the command:
 ```
-cd plotting-wikipedia-page-views
+cd wiki-page-views-analysis-main
 ```
 
 3. Install dependencies: Ensure that you have the necessary dependencies installed by running the following command:
