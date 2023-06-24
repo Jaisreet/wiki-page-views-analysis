@@ -16,7 +16,7 @@ git clone https://github.com/jaisreet/wiki-page-views-analysis.git
 
 2. Navigate to the project directory: Move into the project directory using the command:
 ```
-cd wiki-page-views-analysis-main
+cd wiki-page-views-analysis
 ```
 
 3. Run the Python script: Execute the Python script `create_plots.py` and provide the filenames of the two data files as command-line arguments. The command should look like this:
