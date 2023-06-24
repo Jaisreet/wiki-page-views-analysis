@@ -19,12 +19,7 @@ git clone https://github.com/your-username/wiki-page-views-analysis.git
 cd wiki-page-views-analysis-main
 ```
 
-3. Install dependencies: Ensure that you have the necessary dependencies installed by running the following command:
-```
-pip install -r requirements.txt
-```
-
-4. Run the Python script: Execute the Python script `create_plots.py` and provide the filenames of the two data files as command-line arguments. The command should look like this:
+3. Run the Python script: Execute the Python script `create_plots.py` and provide the filenames of the two data files as command-line arguments. The command should look like this:
 ```
 python3 create_plots.py pagecounts-20190509-120000.txt pagecounts-20190509-130000.txt
 ```
