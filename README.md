@@ -41,5 +41,3 @@ Replace `pagecounts-20190509-120000.txt` and `pagecounts-20190509-130000.txt` wi
 - You can customize the size of the plots by modifying the `plt.figure(figsize=(10, 5))` line in the script.
 
 For further details and code implementation, please refer to the [GitHub repository](https://github.com/jaisreet/wiki-page-views-analysis)
-
-**Note:** Replace `your-username` in the repository URL with your actual GitHub username.
