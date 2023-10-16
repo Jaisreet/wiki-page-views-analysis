@@ -21,9 +21,7 @@ The task is to create two plots based on the provided data of the number of time
 
 3. **Final Output**
 
-   - Use `plt.savefig` to save the figure as a PNG file named "wikipedia.png".
-   - Add labels to the plots using `plt.title`, `plt.xlabel`, and `plt.ylabel` to provide useful information.
-   - To view the figure during testing, use `plt.show()`, but exclude it in the final version.
+   -  View the figure as a PNG file named "wikipedia.png".
 
 A sample "wikipedia.png" file is included in the ZIP file for reference.
 
